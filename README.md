@@ -23,7 +23,7 @@ When setting up VSCode, navigate to the extensions tab on the left, search for D
 Now, you can access your Docker containers and connect to them through VSCode. Click on the Docker icon on the left-hand panel, right click on the container you ran earlier, and start it. Then when started, right click again and "Attach Visual Studio Code".
 The terminals you open will be inside the container, direct access to linux.
 Now you can code with the Pico SDK! The default path for the SDK is `/usr/local/picosdk`, which has an environmental variable `$PICO_SDK_PATH`, and the recommended path for your projects is in `/mnt`.
-Before coding, the SDK may need to be updated. Change directory to the SDK `cd $PICO_SDK_PATH` and run `git pull origin master`, then `git submodule update --init`. This will update the SDK and all references.
+Before coding, the SDK may need to be updated. Change directory to the SDK `cd $PICO_SDK_PATH` and run `git pull origin master`, then `git submodule update --init --remote --recursive`. This will update the SDK and all references.
 
 ---
 ### C/C++ Standards
